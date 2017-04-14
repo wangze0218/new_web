@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
     mcrypt \
     zip \
     pdo_mysql \
-    opcache \
+#    opcache \
  && rm -rf /var/www/html
 
 COPY ./conf/php.ini /usr/local/etc/php/conf.d/
