@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
     mysql-client \
     libjpeg62-turbo-dev \
     libpng12-dev \
+    phpunit \
  && docker-php-ext-configure gd \
     --with-freetype-dir=/usr \
     --with-jpeg-dir=/usr \
@@ -46,6 +47,11 @@ RUN chmod +x /usr/local/bin/composer
 # && make -C /usr/src/redis \
 # && make -C /usr/src/redis install \
 # && rm -r /usr/src/redis
+#RUN wget https://phar.phpunit.de/phpunit.phar
+#   && chmod +x phpunit.phar
+#    && sudo mv phpunit.phar /usr/local/bin/phpunit
+
+
 RUN apt-get install -y redis-tools
 
 ARG USERPASS=www-data
