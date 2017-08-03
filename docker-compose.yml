@@ -1,12 +1,12 @@
 version: "2"
 
 services:
-### console
-    console:
+### php
+    php:
         build:
-            context: ./images/console
+            context: ./php
             args:
-                # console 容器 www-data用户密码
+                # php 容器 www-data用户密码
                 - USERPASS=123456
                 - INSTALL_YARN=false
         volumes_from:
@@ -14,8 +14,6 @@ services:
             - nginx
             - mysql
             - redis
-        volumes:
-            - ./ssh:/home/www-data/.ssh
         links:
             - mysql
             - redis
@@ -28,11 +26,11 @@ services:
              - "112.wgp.dev.4000669696.com:172.18.0.5"
 ### php-fpm
     php-fpm:
-        build: ./images/php-fpm
+        build: ./php-fpm
         volumes:
             - ../:/var/www/
-            - ./images/console/data/storage:/data/laravel/storage/
-
+            - ./logs/weiyuyan/:/data/laravel/storage/
+            - ./logs/nginx/:/var/log/nginx/
         extra_hosts:
             # IMPORTANT: Replace with your Docker Host IP (will be appended to /etc/hosts)
             - "api.4000669696.com:172.18.0.5"
@@ -51,10 +49,8 @@ services:
         links:
             - php-fpm
         volumes:
-            - ./logs/nginx/:/var/log/nginx/
-            - ./images/nginx/sites:/etc/nginx/conf.d/
-            - ./images/nginx/nginx.conf:/etc/nginx/nginx.conf
-
+            - ./nginx/sites:/etc/nginx/conf.d/
+            - ./nginx/nginx.conf:/etc/nginx/nginx.conf
         extra_hosts:
             # IMPORTANT: Replace with your Docker Host IP (will be appended to /etc/hosts)
             - "api.4000669696.com:172.18.0.5"
@@ -72,11 +68,15 @@ services:
             MYSQL_USER: "root"
             MYSQL_PASSWORD: "root"
         volumes:
-            - ./data/mysql:/var/lib/mysql
+            - ./mysql:/var/lib/mysql
 ### redis
     redis:
         image: redis:3.0.7
         ports:
             - "6379:6379"
         volumes:
-            - ./data/redis/redis.conf:/usr/local/etc/redis/redis.conf
+            - ./redis:/data
+        command:
+              redis-server --databases 64
+#        volumes:
+#            - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
