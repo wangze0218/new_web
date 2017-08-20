@@ -1,4 +1,2 @@
-data/
-logs/
-app/
-ssh/*
+mysql
+redis
