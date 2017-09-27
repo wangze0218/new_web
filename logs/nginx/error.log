@@ -1,2 +1,100 @@
 2017/08/08 06:35:34 [warn] 1#1: conflicting server name "wgroup.dev.4000669696.com" on 0.0.0.0:80, ignored
 2017/08/21 06:05:35 [emerg] 1#1: host not found in upstream "php-fpm" in /etc/nginx/conf.d/blog.418890061.com.conf:12
+2017/08/28 10:22:05 [error] 8#8: *301 directory index of "/var/www/huayunshuhai/public/bootstrap-3.3.7-dist/" is forbidden, client: 192.168.33.1, server: huayunshuhai.com, request: "GET /bootstrap-3.3.7-dist/ HTTP/1.1", host: "huayunshuhai.com"
+2017/08/28 10:22:48 [error] 6#6: *319 directory index of "/var/www/huayunshuhai/public/css/" is forbidden, client: 192.168.33.1, server: huayunshuhai.com, request: "GET /css/ HTTP/1.1", host: "huayunshuhai.com"
+2017/08/29 07:40:01 [error] 6#6: *73 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /var/www/huayunshuhai/app/Http/Controllers/Front/SignInController.php on line 26" while reading response header from upstream, client: 192.168.33.1, server: huayunshuhai.com, request: "POST /sign_in HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "huayunshuhai.com", referrer: "http://huayunshuhai.com/sign_in"
+2017/09/07 06:09:57 [error] 8#8: *1 directory index of "/var/www/" is forbidden, client: 192.168.33.1, server: localhosts, request: "HEAD / HTTP/1.1", host: "localhosts"
+2017/09/07 06:10:41 [error] 7#7: *2 directory index of "/var/www/" is forbidden, client: 192.168.33.1, server: localhosts, request: "HEAD / HTTP/1.1", host: "localhosts"
+2017/09/07 06:16:49 [error] 7#7: *8 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: appid should not be NULL! in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php:46
+Stack trace:
+#0 /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php(31): AlipayTradeService->__construct(Array)
+#1 {main}
+  thrown in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php on line 46" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "POST /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com", referrer: "http://localhost.com/"
+2017/09/07 06:17:52 [error] 6#6: *10 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: appid should not be NULL! in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php:46
+Stack trace:
+#0 /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php(31): AlipayTradeService->__construct(Array)
+#1 {main}
+  thrown in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php on line 46" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "POST /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com", referrer: "http://localhost.com/"
+2017/09/07 06:25:56 [error] 7#7: *18 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: appid should not be NULL! in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php:46
+Stack trace:
+#0 /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php(31): AlipayTradeService->__construct(Array)
+#1 {main}
+  thrown in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php on line 46" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "POST /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com", referrer: "http://localhost.com/"
+2017/09/07 06:26:11 [error] 7#7: *18 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: appid should not be NULL! in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php:46
+Stack trace:
+#0 /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php(31): AlipayTradeService->__construct(Array)
+#1 {main}
+  thrown in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php on line 46" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "POST /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com", referrer: "http://localhost.com/"
+2017/09/07 06:38:23 [error] 8#8: *26 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: appid should not be NULL! in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php:46
+Stack trace:
+#0 /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php(31): AlipayTradeService->__construct(Array)
+#1 {main}
+  thrown in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php on line 46" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "POST /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com", referrer: "http://localhost.com/"
+2017/09/07 06:42:49 [error] 6#6: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: appid should not be NULL! in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php:46
+Stack trace:
+#0 /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php(31): AlipayTradeService->__construct(Array)
+#1 {main}
+  thrown in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php on line 46" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "POST /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com", referrer: "http://localhost.com/"
+2017/09/07 06:43:02 [error] 6#6: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: appid should not be NULL! in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php:46
+Stack trace:
+#0 /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php(31): AlipayTradeService->__construct(Array)
+#1 {main}
+  thrown in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php on line 46" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "POST /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com", referrer: "http://localhost.com/"
+2017/09/07 06:45:12 [error] 5#5: *39 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: appid should not be NULL! in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php:46
+Stack trace:
+#0 /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php(31): AlipayTradeService->__construct(Array)
+#1 {main}
+  thrown in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php on line 46" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "POST /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com", referrer: "http://localhost.com/"
+2017/09/07 06:52:26 [error] 5#5: *182 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: appid should not be NULL! in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php:46
+Stack trace:
+#0 /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php(31): AlipayTradeService->__construct(Array)
+#1 {main}
+  thrown in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php on line 46" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "POST /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com", referrer: "http://localhost.com/"
+2017/09/07 06:53:25 [error] 8#8: *185 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: WIDout_trade_no in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php on line 13" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "GET /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com"
+2017/09/07 06:53:25 [error] 8#8: *185 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: WIDsubject in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php on line 16" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "GET /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com"
+2017/09/07 06:53:25 [error] 8#8: *185 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: WIDtotal_amount in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php on line 19" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "GET /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com"
+2017/09/07 06:53:25 [error] 8#8: *185 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: WIDbody in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php on line 22" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "GET /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com"
+2017/09/07 06:55:21 [error] 7#7: *205 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: appid should not be NULL! in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php:46
+Stack trace:
+#0 /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php(31): AlipayTradeService->__construct(Array)
+#1 {main}
+  thrown in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php on line 46" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "POST /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com", referrer: "http://localhost.com/"
+2017/09/07 06:56:08 [error] 5#5: *210 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: WIDout_trade_no in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php on line 13" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "GET /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com"
+2017/09/07 06:56:08 [error] 5#5: *210 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: WIDsubject in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php on line 16" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "GET /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com"
+2017/09/07 06:56:08 [error] 5#5: *210 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: WIDtotal_amount in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php on line 19" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "GET /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com"
+2017/09/07 06:56:08 [error] 5#5: *210 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined index: WIDbody in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php on line 22" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "GET /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com"
+2017/09/07 06:56:08 [error] 5#5: *210 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Exception: appid should not be NULL! in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php:46
+Stack trace:
+#0 /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/pagepay.php(31): AlipayTradeService->__construct(Array)
+#1 {main}
+  thrown in /var/www/alipay.trade.page.pay-PHP-UTF-8/pagepay/service/AlipayTradeService.php on line 46" while reading upstream, client: 192.168.33.1, server: localhost.com, request: "GET /pagepay/pagepay.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost.com"
+2017/09/18 08:45:22 [warn] 1#1: conflicting server name "operate.lo.4000669696.com" on 0.0.0.0:80, ignored
+2017/09/18 09:42:42 [error] 8#8: *66 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function dd() in /var/www/wyyapi/public/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/wyyapi/public/index.php on line 2" while reading response header from upstream, client: 192.168.33.1, server: api.4000669696.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "api.4000669696.com"
+2017/09/18 09:47:29 [error] 6#6: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function dd() in /var/www/wyyapi/public/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/wyyapi/public/index.php on line 2" while reading response header from upstream, client: 192.168.33.1, server: api.4000669696.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "api.4000669696.com"
+2017/09/18 09:47:31 [error] 6#6: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function dd() in /var/www/wyyapi/public/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/wyyapi/public/index.php on line 2" while reading response header from upstream, client: 192.168.33.1, server: api.4000669696.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "api.4000669696.com"
+2017/09/18 09:47:31 [error] 6#6: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function dd() in /var/www/wyyapi/public/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/wyyapi/public/index.php on line 2" while reading response header from upstream, client: 192.168.33.1, server: api.4000669696.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "api.4000669696.com"
+2017/09/19 02:12:51 [error] 8#8: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.33.1, server: operate.lo.4000669696.com, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "operate.lo.4000669696.com"
+2017/09/19 02:12:52 [error] 8#8: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.33.1, server: operate.lo.4000669696.com, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "operate.lo.4000669696.com"
+2017/09/19 02:12:53 [error] 8#8: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.33.1, server: operate.lo.4000669696.com, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "operate.lo.4000669696.com"
+2017/09/19 02:12:53 [error] 8#8: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.33.1, server: operate.lo.4000669696.com, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "operate.lo.4000669696.com"
+2017/09/19 02:12:53 [error] 8#8: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.33.1, server: operate.lo.4000669696.com, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "operate.lo.4000669696.com"
+2017/09/19 02:12:53 [error] 8#8: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.33.1, server: operate.lo.4000669696.com, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "operate.lo.4000669696.com"
+2017/09/19 02:12:54 [error] 8#8: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.33.1, server: operate.lo.4000669696.com, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "operate.lo.4000669696.com"
+2017/09/19 02:12:54 [error] 8#8: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.33.1, server: operate.lo.4000669696.com, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "operate.lo.4000669696.com"
+2017/09/19 02:12:54 [error] 8#8: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.33.1, server: operate.lo.4000669696.com, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "operate.lo.4000669696.com"
+2017/09/19 02:12:54 [error] 8#8: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.33.1, server: operate.lo.4000669696.com, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "operate.lo.4000669696.com"
+2017/09/19 02:12:56 [error] 8#8: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 192.168.33.1, server: operate.lo.4000669696.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "operate.lo.4000669696.com"
+2017/09/27 03:11:43 [error] 8#8: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/wteachmgt/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/wteachmgt/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 192.168.33.1, server: wteachmgt.dev.4000669696.com, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "wteachmgt.dev.4000669696.com"
+2017/09/27 03:11:43 [error] 8#8: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/wteachmgt/bootstrap/../vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/wteachmgt/bootstrap/autoload.php on line 17" while reading upstream, client: 192.168.33.1, server: wteachmgt.dev.4000669696.com, request: "GET /login HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "wteachmgt.dev.4000669696.com"
