@@ -1,4 +1,4 @@
 ./redis
-./mysql
+
 ./logs
 .idea
